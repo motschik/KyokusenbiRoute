@@ -1,0 +1,2297 @@
+{
+	"line_list": [
+		{
+			"id": "utsu",
+			"name": "宇都宮線",
+			"color": "#FF0000"
+		},
+		{
+			"id": "tera",
+			"name": "寺古田線",
+			"color": "#FFFF00"
+		},
+		{
+			"id": "yuna",
+			"name": "湯長谷線",
+			"color": "#4040FF"
+		},
+		{
+			"id": "yunashin",
+			"name": "湯長谷新線",
+			"color": "#8080FF"
+		},
+		{
+			"id": "yama",
+			"name": "東大和線",
+			"color": "#FF00FF"
+		},
+		{
+			"id": "suzu",
+			"name": "鈴鹿線",
+			"color": "#00FF00"
+		},
+		{
+			"id": "shari",
+			"name": "斜里線",
+			"color": "#00FF00"
+		},
+		{
+			"id": "clean",
+			"name": "クリーンエネルギー線",
+			"color": "#FFFF00"
+		},
+		{
+			"id": "tobu",
+			"name": "東武線",
+			"color": "#0000FF"
+		},
+		{
+			"id": "tshin",
+			"name": "東武真道線",
+			"color": "#0000FF"
+		},
+		{
+			"id": "tkai",
+			"name": "東武開拓地線",
+			"color": "#0000FF"
+		},
+		{
+			"id": "tkoen",
+			"name": "東武高円寺線",
+			"color": "#0000FF"
+		},
+		{
+			"id": "mido",
+			"name": "みどり野線",
+			"color": "#008000"
+		},
+		{
+			"id": "maru",
+			"name": "丸ノ内線",
+			"color": "#FF0000"
+		},
+		{
+			"id": "hyoka",
+			"name": "特急ひょうか",
+			"color": "#FFFFFF"
+		},
+		{
+			"id": "ishi",
+			"name": "特急いしばし",
+			"color": "#FFFFFF"
+		},
+		{
+			"id": "sky",
+			"name": "スカイライン",
+			"color": "#A0A0FF"
+		},
+		{
+			"id": "goku",
+			"name": "極道線",
+			"color": "#808080"
+		},
+		{
+			"id": "tozan",
+			"name": "JAIST登山鉄道",
+			"color": "#FF8080"
+		},
+		{
+			"id": "shuttle",
+			"name": "ニューシャトル",
+			"color": "#402000"
+		},
+		{
+			"id": "furyo",
+			"name": "不慮ノ島線",
+			"color": "#808080"
+		},
+		{
+			"id": "nether",
+			"name": "ネザー鉄道線",
+			"color": "#FF0000"
+		},
+		{
+			"id": "nlocal",
+			"name": "ネザー鉄道線各駅停車",
+			"color": "#00FF00"
+		},
+		{
+			"id": "nhita",
+			"name": "ひたち海浜公園線",
+			"color": "#00FF00"
+		},
+		{
+			"id": "nsap",
+			"name": "ネザー札幌線",
+			"color": "#0000FF"
+		},
+		{
+			"id": "nlaugh",
+			"name": "ネザーラフテル線",
+			"color": "#0000FF"
+		},
+		{
+			"id": "nkai",
+			"name": "ネザー海底神殿線",
+			"color": "#0000FF"
+		}
+	],
+	"station_list": [
+		{
+			"id": "ote",
+			"name": "大手町",
+			"walk_transfers": [
+				{
+					"id": "note",
+					"cost": 30
+				}
+			],
+			"tracks": [
+				{
+					"no": 0,
+					"line": "ishi",
+					"cost": 10,
+					"dist": "oya",
+					"dist_no": 2,
+					"for": "石橋・札幌"
+				},
+				{
+					"no": 1,
+					"line": "maru",
+					"cost": 10,
+					"dist": "kyoku",
+					"dist_no": 6,
+					"for": "松本"
+				},
+				{
+					"no": 2,
+					"line": "tobu",
+					"cost": 26,
+					"dist": "soya",
+					"dist_no": 1,
+					"for": "東武石橋"
+				},
+				{
+					"no": 3,
+					"line": "tshin",
+					"cost": 12,
+					"dist": "mori",
+					"dist_no": 1,
+					"for": "原始町"
+				},
+				{
+					"no": 4,
+					"line": "mido",
+					"cost": 15,
+					"dist": "ocha",
+					"dist_no": 0,
+					"for": "開拓地"
+				},
+				{
+					"no": 5,
+					"line": "sky",
+					"cost": 37,
+					"dist": "chosen",
+					"dist_no": 2,
+					"for": "神戸"
+				},
+				{
+					"no": 6,
+					"line": "maru",
+					"cost": 10,
+					"dist": "jin",
+					"dist_no": 1,
+					"for": "新千里浜"
+				},
+				{
+					"no": 8,
+					"line": "hyoka",
+					"cost": 23,
+					"dist": "jai",
+					"dist_no": 5,
+					"for": "原始町"
+				},
+				{
+					"no": 9,
+					"line": "hyoka",
+					"cost": 28,
+					"dist": "oya",
+					"dist_no": 3,
+					"for": "札幌"
+				},
+				{
+					"no": 10,
+					"line": "yama",
+					"cost": 16,
+					"dist": "kyoku",
+					"dist_no": 2,
+					"for": "片岡高原"
+				},
+				{
+					"no": 11,
+					"line": "yunashin",
+					"cost": 12,
+					"dist": "nkyoku",
+					"dist_no": 0,
+					"for": "八幡町"
+				},
+				{
+					"no": 12,
+					"line": "maru",
+					"cost": 13,
+					"dist": "kyoku",
+					"dist_no": 6,
+					"for": "松本"
+				},
+				{
+					"no": 13,
+					"line": "maru",
+					"cost": 17,
+					"dist": "jin",
+					"dist_no": 1,
+					"for": "新千里浜"
+				}
+			]
+		},
+		{
+			"id": "jai",
+			"name": "JAIST",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "utsu",
+					"cost": 23,
+					"dist": "oka",
+					"dist_no": 0,
+					"for": "海底神殿"
+				},
+				{
+					"no": 1,
+					"line": "maru",
+					"cost": 28,
+					"dist": "shin",
+					"dist_no": 0,
+					"for": "松本"
+				},
+				{
+					"no": 2,
+					"line": "maru",
+					"cost": 22,
+					"dist": "kaijo",
+					"dist_no": 1,
+					"for": "新千里浜"
+				},
+				{
+					"no": 3,
+					"line": "tozan",
+					"cost": 30,
+					"dist": "chufu",
+					"dist_no": 0,
+					"for": "山頂"
+				},
+				{
+					"no": 4,
+					"line": "hyoka",
+					"cost": 22,
+					"dist": "ote",
+					"dist_no": 9,
+					"for": "札幌"
+				},
+				{
+					"no": 5,
+					"line": "hyoka",
+					"cost": 54,
+					"dist": "laugh2",
+					"dist_no": 2,
+					"for": "原始町"
+				}
+			]
+		},
+		{
+			"id": "oka",
+			"name": "岡本",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "utsu",
+					"cost": 27,
+					"dist": "kyoku",
+					"dist_no": 0,
+					"for": "海底神殿"
+				},
+				{
+					"no": 1,
+					"line": "yuna",
+					"cost": 37,
+					"dist": "yuna",
+					"dist_no": 1,
+					"for": "八幡町"
+				},
+				{
+					"no": 2,
+					"line": "utsu",
+					"cost": 23,
+					"dist": "jai",
+					"dist_no": 0,
+					"for": "JAIST"
+				}
+			]
+		},
+		{
+			"id": "kyoku",
+			"name": "曲線美",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "utsu",
+					"cost": 25,
+					"dist": "oya",
+					"dist_no": 0,
+					"for": "海底神殿"
+				},
+				{
+					"no": 1,
+					"line": "ishi",
+					"cost": 25,
+					"dist": "oya",
+					"dist_no": 2,
+					"for": "石橋・札幌"
+				},
+				{
+					"no": 2,
+					"line": "yama",
+					"cost": 18,
+					"dist": "yama",
+					"dist_no": 0,
+					"for": "片岡高原"
+				},
+				{
+					"no": 3,
+					"line": "clean",
+					"cost": 23,
+					"dist": "nkyoku",
+					"dist_no": 2,
+					"for": "那須高原"
+				},
+				{
+					"no": 4,
+					"line": "utsu",
+					"cost": 23,
+					"dist": "oka",
+					"dist_no": 2,
+					"for": "JAIST"
+				},
+				{
+					"no": 5,
+					"line": "hyoka",
+					"cost": 14,
+					"dist": "ote",
+					"dist_no": 8,
+					"for": "原始町"
+				},
+				{
+					"no": 6,
+					"line": "maru",
+					"cost": 22,
+					"dist": "matsu",
+					"dist_no": 0,
+					"for": "松本"
+				},
+				{
+					"no": 7,
+					"line": "maru",
+					"cost": 24,
+					"dist": "ote",
+					"dist_no": 13,
+					"for": "新千里浜"
+				}
+			]
+		},
+		{
+			"id": "oya",
+			"name": "小山中央",
+			"walk_transfers": [
+				{
+					"id": "soya",
+					"cost": 30
+				}
+			],
+			"tracks": [
+				{
+					"no": 0,
+					"line": "utsu",
+					"cost": 25,
+					"dist": "numa",
+					"dist_no": 0,
+					"for": "海底神殿"
+				},
+				{
+					"no": 1,
+					"line": "utsu",
+					"cost": 25,
+					"dist": "kyoku",
+					"dist_no": 4,
+					"for": "JAIST"
+				},
+				{
+					"no": 2,
+					"line": "ishi",
+					"cost": 41,
+					"dist": "ishi",
+					"dist_no": 2,
+					"for": "石橋・札幌"
+				},
+				{
+					"no": 3,
+					"line": "hyoka",
+					"cost": 106,
+					"dist": "chita",
+					"dist_no": 0,
+					"for": "札幌"
+				},
+				{
+					"no": 4,
+					"line": "hyoka",
+					"cost": 25,
+					"dist": "kyoku",
+					"dist_no": 5,
+					"for": "原始町"
+				},
+				{
+					"no": 5,
+					"line": "yama",
+					"cost": 26,
+					"dist": "kata",
+					"dist_no": 0,
+					"for": "片岡高原"
+				}
+			]
+		},
+		{
+			"id": "numa",
+			"name": "沼田",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "utsu",
+					"cost": 16,
+					"dist": "ncho",
+					"dist_no": 1,
+					"for": "海底神殿"
+				},
+				{
+					"no": 1,
+					"line": "utsu",
+					"cost": 27,
+					"dist": "oya",
+					"dist_no": 1,
+					"for": "JAIST"
+				}
+			]
+		},
+		{
+			"id": "ncho",
+			"name": "北朝鮮",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "tera",
+					"cost": 47,
+					"dist": "tera",
+					"dist_no": 0,
+					"for": "杉戸"
+				},
+				{
+					"no": 1,
+					"line": "utsu",
+					"cost": 48,
+					"dist": "chosen",
+					"dist_no": 0,
+					"for": "海底神殿"
+				},
+				{
+					"no": 2,
+					"line": "utsu",
+					"cost": 17,
+					"dist": "numa",
+					"dist_no": 1,
+					"for": "JAIST"
+				},
+				{
+					"no": 3,
+					"line": "shuttle",
+					"cost": 63,
+					"dist": "shin",
+					"dist_no": 2,
+					"for": "真道"
+				}
+			]
+		},
+		{
+			"id": "chosen",
+			"name": "朝鮮半島",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "utsu",
+					"cost": 67,
+					"dist": "kai",
+					"dist_no": 0,
+					"for": "海底神殿"
+				},
+				{
+					"no": 1,
+					"line": "utsu",
+					"cost": 47,
+					"dist": "ncho",
+					"dist_no": 2,
+					"for": "JAIST"
+				},
+				{
+					"no": 2,
+					"line": "sky",
+					"cost": 26,
+					"dist": "ito",
+					"dist_no": 0,
+					"for": "神戸"
+				},
+				{
+					"no": 3,
+					"line": "sky",
+					"cost": 38,
+					"dist": "ote",
+					"dist_no": 5,
+					"for": "大手町"
+				},
+				{
+					"no": 4,
+					"line": "goku",
+					"cost": 10,
+					"dist": "michi",
+					"dist_no": 0,
+					"for": "東武真道"
+				}
+			]
+		},
+		{
+			"id": "kai",
+			"name": "海底神殿",
+			"walk_transfers": [
+				{
+					"id": "nkai",
+					"cost": 30
+				}
+			],
+			"tracks": [
+				{
+					"no": 0,
+					"line": "utsu",
+					"cost": 65,
+					"dist": "chosen",
+					"dist_no": 1,
+					"for": "JAIST"
+				}
+			]
+		},
+		{
+			"id": "tera",
+			"name": "寺古田",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "tera",
+					"cost": 37,
+					"dist": "ishi",
+					"dist_no": 0,
+					"for": "杉戸"
+				},
+				{
+					"no": 1,
+					"line": "tera",
+					"cost": 44,
+					"dist": "ncho",
+					"dist_no": 2,
+					"for": "JAIST"
+				}
+			]
+		},
+		{
+			"id": "ishi",
+			"name": "石橋",
+			"walk_transfers": [
+				{
+					"id": "tishi",
+					"cost": 30
+				},
+				{
+					"id": "nishi",
+					"cost": 30
+				}
+			],
+			"tracks": [
+				{
+					"no": 0,
+					"line": "tera",
+					"cost": 12,
+					"dist": "sugi",
+					"dist_no": 0,
+					"for": "杉戸"
+				},
+				{
+					"no": 1,
+					"line": "tera",
+					"cost": 40,
+					"dist": "tera",
+					"dist_no": 1,
+					"for": "北朝鮮・JAIST"
+				},
+				{
+					"no": 2,
+					"line": "ishi",
+					"cost": 29,
+					"dist": "kore",
+					"dist_no": 0,
+					"for": "札幌"
+				},
+				{
+					"no": 3,
+					"line": "ishi",
+					"cost": 40,
+					"dist": "oya",
+					"dist_no": 4,
+					"for": "大手町・原始町"
+				}
+			]
+		},
+		{
+			"id": "sugi",
+			"name": "杉戸",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "tera",
+					"cost": 11,
+					"dist": "ishi",
+					"dist_no": 1,
+					"for": "北朝鮮・JAIST"
+				}
+			]
+		},
+		{
+			"id": "yuna",
+			"name": "湯長谷",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "clean",
+					"cost": 21,
+					"dist": "taiyo",
+					"dist_no": 0,
+					"for": "那須高原"
+				},
+				{
+					"no": 1,
+					"line": "yuna",
+					"cost": 40,
+					"dist": "yaha",
+					"dist_no": 0,
+					"for": "八幡町"
+				},
+				{
+					"no": 2,
+					"line": "yuna",
+					"cost": 41,
+					"dist": "oka",
+					"dist_no": 2,
+					"for": "JAIST"
+				},
+				{
+					"no": 3,
+					"line": "clean",
+					"cost": 29,
+					"dist": "nkyoku",
+					"dist_no": 3,
+					"for": "曲線美・石橋・札幌"
+				}
+			]
+		},
+		{
+			"id": "yaha",
+			"name": "八幡町",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "yuna",
+					"cost": 39,
+					"dist": "yuna",
+					"dist_no": 2,
+					"for": "JAIST"
+				},
+				{
+					"no": 1,
+					"line": "yunashin",
+					"cost": 22,
+					"dist": "nkyoku",
+					"dist_no": 1,
+					"for": "大手町"
+				},
+				{
+					"no": 2,
+					"line": "suzu",
+					"cost": 50,
+					"dist": "kata",
+					"dist_no": 1,
+					"for": "鈴鹿村"
+				}
+			]
+		},
+		{
+			"id": "nkyoku",
+			"name": "北曲線美",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "yunashin",
+					"cost": 23,
+					"dist": "yaha",
+					"dist_no": 1,
+					"for": "八幡町"
+				},
+				{
+					"no": 1,
+					"line": "yunashin",
+					"cost": 13,
+					"dist": "ote",
+					"dist_no": 11,
+					"for": "大手町"
+				},
+				{
+					"no": 2,
+					"line": "clean",
+					"cost": 28,
+					"dist": "yuna",
+					"dist_no": 0,
+					"for": "那須高原"
+				},
+				{
+					"no": 3,
+					"line": "clean",
+					"cost": 22,
+					"dist": "kyoku",
+					"dist_no": 1,
+					"for": "石橋・札幌"
+				}
+			]
+		},
+		{
+			"id": "yama",
+			"name": "東大和",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "yama",
+					"cost": 26,
+					"dist": "kata",
+					"dist_no": 0,
+					"for": "片岡高原"
+				},
+				{
+					"no": 1,
+					"line": "yama",
+					"cost": 17,
+					"dist": "kyoku",
+					"dist_no": 5,
+					"for": "大手町・原始町"
+				}
+			]
+		},
+		{
+			"id": "kata",
+			"name": "片岡高原",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "yama",
+					"cost": 27,
+					"dist": "yama",
+					"dist_no": 1,
+					"for": "大手町・原始町"
+				},
+				{
+					"no": 1,
+					"line": "suzu",
+					"cost": 28,
+					"dist": "suzu",
+					"dist_no": 0,
+					"for": "鈴鹿村"
+				},
+				{
+					"no": 2,
+					"line": "suzu",
+					"cost": 46,
+					"dist": "yaha",
+					"dist_no": 2,
+					"for": "八幡町"
+				}
+			]
+		},
+		{
+			"id": "sdgs",
+			"name": "SDGsハウス",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "yama",
+					"cost": 18,
+					"dist": "yama",
+					"dist_no": 1,
+					"for": "大手町・原始町"
+				}
+			]
+		},
+		{
+			"id": "suzu",
+			"name": "鈴鹿村",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "suzu",
+					"cost": 29,
+					"dist": "kata",
+					"dist_no": 2,
+					"for": "八幡町"
+				}
+			]
+		},
+		{
+			"id": "shari",
+			"name": "斜里",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "hyoka",
+					"cost": 35,
+					"dist": "chita",
+					"dist_no": 0,
+					"for": "札幌"
+				},
+				{
+					"no": 2,
+					"line": "hyoka",
+					"cost": 74,
+					"dist": "oya",
+					"dist_no": 4,
+					"for": "大手町・原始町"
+				},
+				{
+					"no": 3,
+					"line": "ishi",
+					"cost": 26,
+					"dist": "kore",
+					"dist_no": 1,
+					"for": "大手町・原始町"
+				},
+				{
+					"no": 4,
+					"line": "shari",
+					"cost": 30,
+					"dist": "sharichu",
+					"dist_no": 0,
+					"for": "ラフテル"
+				}
+			]
+		},
+		{
+			"id": "sharichu",
+			"name": "斜里中央",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "shari",
+					"cost": 140,
+					"dist": "laugh",
+					"dist_no": 0,
+					"for": "ラフテル"
+				},
+				{
+					"no": 1,
+					"line": "shari",
+					"cost": 30,
+					"dist": "shari",
+					"dist_no": 4,
+					"for": "斜里"
+				}
+			]
+		},
+		{
+			"id": "laugh",
+			"name": "ラフテル",
+			"walk_transfers": [
+				{
+					"id": "nlaugh",
+					"cost": 30
+				}
+			],
+			"tracks": [
+				{
+					"no": 0,
+					"line": "shari",
+					"cost": 137,
+					"dist": "sharichu",
+					"dist_no": 1,
+					"for": "斜里"
+				}
+			]
+		},
+		{
+			"id": "taiyo",
+			"name": "人工太陽",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "clean",
+					"cost": 12,
+					"dist": "hoku",
+					"dist_no": 0,
+					"for": "那須高原"
+				},
+				{
+					"no": 1,
+					"line": "clean",
+					"cost": 15,
+					"dist": "yuna",
+					"dist_no": 3,
+					"for": "曲線美・札幌"
+				}
+			]
+		},
+		{
+			"id": "hoku",
+			"name": "北西村",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "clean",
+					"cost": 22,
+					"dist": "nasu",
+					"dist_no": 0,
+					"for": "那須高原"
+				},
+				{
+					"no": 1,
+					"line": "clean",
+					"cost": 12,
+					"dist": "taiyo",
+					"dist_no": 1,
+					"for": "曲線美・札幌"
+				}
+			]
+		},
+		{
+			"id": "nasu",
+			"name": "那須高原",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "clean",
+					"cost": 21,
+					"dist": "hoku",
+					"dist_no": 1,
+					"for": "曲線美・札幌"
+				}
+			]
+		},
+		{
+			"id": "soya",
+			"name": "南小山",
+			"walk_transfers": [
+				{
+					"id": "oya",
+					"cost": 30
+				}
+			],
+			"tracks": [
+				{
+					"no": 0,
+					"line": "mido",
+					"cost": 25,
+					"dist": "mido",
+					"dist_no": 0,
+					"for": "開拓地"
+				},
+				{
+					"no": 1,
+					"line": "tobu",
+					"cost": 18,
+					"dist": "shinmido",
+					"dist_no": 0,
+					"for": "東武石橋"
+				},
+				{
+					"no": 2,
+					"line": "tobu",
+					"cost": 26,
+					"dist": "ote",
+					"dist_no": 3,
+					"for": "大手町・原始町"
+				},
+				{
+					"no": 3,
+					"line": "mido",
+					"cost": 17,
+					"dist": "ocha",
+					"dist_no": 1,
+					"for": "大手町"
+				}
+			]
+		},
+		{
+			"id": "shinmido",
+			"name": "新みどり野",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "tobu",
+					"cost": 12,
+					"dist": "mama",
+					"dist_no": 0,
+					"for": "東武石橋"
+				},
+				{
+					"no": 1,
+					"line": "tobu",
+					"cost": 18,
+					"dist": "soya",
+					"dist_no": 2,
+					"for": "大手町・原始町"
+				}
+			]
+		},
+		{
+			"id": "mama",
+			"name": "間々田",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "tobu",
+					"cost": 24,
+					"dist": "tishi",
+					"dist_no": 0,
+					"for": "東武石橋"
+				},
+				{
+					"no": 1,
+					"line": "tobu",
+					"cost": 13,
+					"dist": "shinmido",
+					"dist_no": 1,
+					"for": "大手町・原始町"
+				}
+			]
+		},
+		{
+			"id": "tishi",
+			"name": "東武石橋",
+			"walk_transfers": [
+				{
+					"id": "ishi",
+					"cost": 30
+				},
+				{
+					"id": "nishi",
+					"cost": 30
+				}
+			],
+			"tracks": [
+				{
+					"no": 0,
+					"line": "tobu",
+					"cost": 24,
+					"dist": "mama",
+					"dist_no": 1,
+					"for": "大手町・原始町"
+				},
+				{
+					"no": 1,
+					"line": "tkai",
+					"cost": 34,
+					"dist": "kaitaku",
+					"dist_no": 0,
+					"for": "開拓地"
+				},
+				{
+					"no": 2,
+					"line": "tkoen",
+					"cost": 26,
+					"dist": "takano",
+					"dist_no": 1,
+					"for": "高円寺"
+				}
+			]
+		},
+		{
+			"id": "mori",
+			"name": "守谷",
+			"walk_transfers": [
+				{
+					"id": "smori",
+					"cost": 30
+				}
+			],
+			"tracks": [
+				{
+					"no": 0,
+					"line": "tshin",
+					"cost": 12,
+					"dist": "ote",
+					"dist_no": 2,
+					"for": "東武石橋"
+				},
+				{
+					"no": 1,
+					"line": "tshin",
+					"cost": 25,
+					"dist": "tshin",
+					"dist_no": 1,
+					"for": "原始町"
+				}
+			]
+		},
+		{
+			"id": "tshin",
+			"name": "東武真道",
+			"walk_transfers": [
+				{
+					"id": "shin",
+					"cost": 30
+				},
+				{
+					"id": "nshin",
+					"cost": 30
+				}
+			],
+			"tracks": [
+				{
+					"no": 0,
+					"line": "tshin",
+					"cost": 25,
+					"dist": "mori",
+					"dist_no": 0,
+					"for": "東武石橋"
+				},
+				{
+					"no": 1,
+					"line": "tshin",
+					"cost": 40,
+					"dist": "shinchiri",
+					"dist_no": 1,
+					"for": "原始町"
+				},
+				{
+					"no": 2,
+					"line": "goku",
+					"cost": 10,
+					"dist": "goku",
+					"dist_no": 0,
+					"for": "朝鮮半島"
+				}
+			]
+		},
+		{
+			"id": "shinchiri",
+			"name": "新千里浜",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "maru",
+					"cost": 21,
+					"dist": "chiri",
+					"dist_no": 0,
+					"for": "松本"
+				},
+				{
+					"no": 1,
+					"line": "tshin",
+					"cost": 41,
+					"dist": "tshin",
+					"dist_no": 0,
+					"for": "大手町・東武石橋"
+				},
+				{
+					"no": 3,
+					"line": "tshin",
+					"cost": 25,
+					"dist": "omo",
+					"dist_no": 1,
+					"for": "原始町"
+				}
+			]
+		},
+		{
+			"id": "omo",
+			"name": "不面生",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "tshin",
+					"cost": 26,
+					"dist": "shinchiri",
+					"dist_no": 1,
+					"for": "大手町・東武石橋"
+				},
+				{
+					"no": 1,
+					"line": "tshin",
+					"cost": 18,
+					"dist": "laugh2",
+					"dist_no": 2,
+					"for": "原始町"
+				}
+			]
+		},
+		{
+			"id": "laugh2",
+			"name": "第2ラフテル",
+			"walk_transfers": [
+				{
+					"id": "nlaugh2",
+					"cost": 30
+				}
+			],
+			"tracks": [
+				{
+					"no": 0,
+					"line": "tshin",
+					"cost": 18,
+					"dist": "omo",
+					"dist_no": 0,
+					"for": "大手町・東武石橋"
+				},
+				{
+					"no": 1,
+					"line": "hyoka",
+					"cost": 56,
+					"dist": "jai",
+					"dist_no": 4,
+					"for": "大手町・札幌"
+				},
+				{
+					"no": 2,
+					"line": "tshin",
+					"cost": 43,
+					"dist": "genshi",
+					"dist_no": 0,
+					"for": "原始町"
+				}
+			]
+		},
+		{
+			"id": "genshi",
+			"name": "原始町",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "tshin",
+					"cost": 42,
+					"dist": "laugh2",
+					"dist_no": 1,
+					"for": "大手町・札幌"
+				}
+			]
+		},
+		{
+			"id": "kaitaku",
+			"name": "開拓地",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "tkai",
+					"cost": 41,
+					"dist": "tishi",
+					"dist_no": 1,
+					"for": "東武石橋"
+				},
+				{
+					"no": 1,
+					"line": "mido",
+					"cost": 33,
+					"dist": "mido",
+					"dist_no": 1,
+					"for": "大手町"
+				}
+			]
+		},
+		{
+			"id": "takano",
+			"name": "杉戸高野台",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "tkoen",
+					"cost": 27,
+					"dist": "tishi",
+					"dist_no": 2,
+					"for": "東武石橋"
+				},
+				{
+					"no": 1,
+					"line": "tkoen",
+					"cost": 35,
+					"dist": "koen",
+					"dist_no": 0,
+					"for": "高円寺"
+				}
+			]
+		},
+		{
+			"id": "koen",
+			"name": "高円寺",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "tkoen",
+					"cost": 36,
+					"dist": "takano",
+					"dist_no": 0,
+					"for": "東武石橋"
+				}
+			]
+		},
+		{
+			"id": "ocha",
+			"name": "御茶ノ水",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "mido",
+					"cost": 19,
+					"dist": "soya",
+					"dist_no": 0,
+					"for": "開拓地"
+				},
+				{
+					"no": 1,
+					"line": "mido",
+					"cost": 12,
+					"dist": "ote",
+					"dist_no": 4,
+					"for": "大手町"
+				}
+			]
+		},
+		{
+			"id": "mido",
+			"name": "みどり野",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "mido",
+					"cost": 33,
+					"dist": "kaitaku",
+					"dist_no": 1,
+					"for": "開拓地"
+				},
+				{
+					"no": 1,
+					"line": "mido",
+					"cost": 26,
+					"dist": "soya",
+					"dist_no": 3,
+					"for": "大手町"
+				}
+			]
+		},
+		{
+			"id": "chiri",
+			"name": "千里浜",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "maru",
+					"cost": 25,
+					"dist": "kaijo",
+					"dist_no": 0,
+					"for": "松本"
+				},
+				{
+					"no": 1,
+					"line": "maru",
+					"cost": 20,
+					"dist": "shinchiri",
+					"dist_no": 0,
+					"for": "新千里浜"
+				}
+			]
+		},
+		{
+			"id": "kaijo",
+			"name": "海上世界",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "maru",
+					"cost": 22,
+					"dist": "jai",
+					"dist_no": 1,
+					"for": "松本"
+				},
+				{
+					"no": 1,
+					"line": "maru",
+					"cost": 26,
+					"dist": "chiri",
+					"dist_no": 1,
+					"for": "新千里浜"
+				}
+			]
+		},
+		{
+			"id": "shin",
+			"name": "真道",
+			"walk_transfers": [
+				{
+					"id": "tshin",
+					"cost": 30
+				},
+				{
+					"id": "nshin",
+					"cost": 30
+				}
+			],
+			"tracks": [
+				{
+					"no": 0,
+					"line": "maru",
+					"cost": 13,
+					"dist": "smori",
+					"dist_no": 0,
+					"for": "松本"
+				},
+				{
+					"no": 1,
+					"line": "maru",
+					"cost": 27,
+					"dist": "jai",
+					"dist_no": 2,
+					"for": "新千里浜"
+				},
+				{
+					"no": 2,
+					"line": "shuttle",
+					"cost": 63,
+					"dist": "ncho",
+					"dist_no": 3,
+					"for": "北朝鮮"
+				}
+			]
+		},
+		{
+			"id": "smori",
+			"name": "南守谷",
+			"walk_transfers": [
+				{
+					"id": "mori",
+					"cost": 30
+				}
+			],
+			"tracks": [
+				{
+					"no": 0,
+					"line": "maru",
+					"cost": 10,
+					"dist": "jin",
+					"dist_no": 0,
+					"for": "松本"
+				},
+				{
+					"no": 1,
+					"line": "maru",
+					"cost": 13,
+					"dist": "shin",
+					"dist_no": 1,
+					"for": "新千里浜"
+				}
+			]
+		},
+		{
+			"id": "jin",
+			"name": "神社",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "maru",
+					"cost": 17,
+					"dist": "ote",
+					"dist_no": 12,
+					"for": "松本"
+				},
+				{
+					"no": 1,
+					"line": "maru",
+					"cost": 11,
+					"dist": "smori",
+					"dist_no": 1,
+					"for": "新千里浜"
+				}
+			]
+		},
+		{
+			"id": "matsu",
+			"name": "松本",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "maru",
+					"cost": 24,
+					"dist": "kyoku",
+					"dist_no": 7,
+					"for": "新千里浜"
+				}
+			]
+		},
+		{
+			"id": "kore",
+			"name": "是政",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "ishi",
+					"cost": 26,
+					"dist": "shari",
+					"dist_no": 0,
+					"for": "札幌"
+				},
+				{
+					"no": 1,
+					"line": "ishi",
+					"cost": 32,
+					"dist": "ishi",
+					"dist_no": 3,
+					"for": "大手町・原始町"
+				}
+			]
+		},
+		{
+			"id": "chita",
+			"name": "千反田",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "hyoka",
+					"cost": 32,
+					"dist": "take",
+					"dist_no": 0,
+					"for": "札幌"
+				},
+				{
+					"no": 1,
+					"line": "hyoka",
+					"cost": 35,
+					"dist": "shari",
+					"dist_no": 2,
+					"for": "大手町・原始町"
+				}
+			]
+		},
+		{
+			"id": "take",
+			"name": "茸島",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "hyoka",
+					"cost": 19,
+					"dist": "furyo",
+					"dist_no": 0,
+					"for": "札幌"
+				},
+				{
+					"no": 1,
+					"line": "hyoka",
+					"cost": 32,
+					"dist": "chita",
+					"dist_no": 1,
+					"for": "大手町・原始町"
+				}
+			]
+		},
+		{
+			"id": "furyo",
+			"name": "不慮ノ島",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "hyoka",
+					"cost": 39,
+					"dist": "sap",
+					"dist_no": 0,
+					"for": "札幌"
+				},
+				{
+					"no": 1,
+					"line": "hyoka",
+					"cost": 20,
+					"dist": "take",
+					"dist_no": 1,
+					"for": "大手町・原始町"
+				},
+				{
+					"no": 2,
+					"line": "furyo",
+					"cost": 10,
+					"dist": "niho",
+					"dist_no": 0,
+					"for": "二宝港"
+				},
+				{
+					"no": 3,
+					"line": "furyo",
+					"cost": 10,
+					"dist": "koto",
+					"dist_no": 0,
+					"for": "コトユエ"
+				}
+			]
+		},
+		{
+			"id": "sap",
+			"name": "札幌",
+			"walk_transfers": [
+				{
+					"id": "nsap",
+					"cost": 30
+				}
+			],
+			"tracks": [
+				{
+					"no": 0,
+					"line": "hyoka",
+					"cost": 41,
+					"dist": "furyo",
+					"dist_no": 1,
+					"for": "大手町・原始町"
+				}
+			]
+		},
+		{
+			"id": "ito",
+			"name": "スズノス・K・イトウ",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "sky",
+					"cost": 62,
+					"dist": "shinkobe",
+					"dist_no": 0,
+					"for": "神戸"
+				},
+				{
+					"no": 1,
+					"line": "sky",
+					"cost": 55,
+					"dist": "ote",
+					"dist_no": 5,
+					"for": "大手町"
+				}
+			]
+		},
+		{
+			"id": "shinkobe",
+			"name": "新神戸",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "sky",
+					"cost": 16,
+					"dist": "sanno",
+					"dist_no": 0,
+					"for": "神戸"
+				},
+				{
+					"no": 1,
+					"line": "sky",
+					"cost": 61,
+					"dist": "ito",
+					"dist_no": 1,
+					"for": "大手町"
+				}
+			]
+		},
+		{
+			"id": "sanno",
+			"name": "三ノ宮",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "sky",
+					"cost": 16,
+					"dist": "kobe",
+					"dist_no": 0,
+					"for": "神戸"
+				},
+				{
+					"no": 1,
+					"line": "sky",
+					"cost": 16,
+					"dist": "shinkobe",
+					"dist_no": 1,
+					"for": "大手町"
+				}
+			]
+		},
+		{
+			"id": "kobe",
+			"name": "神戸",
+			"walk_transfers": [
+				{
+					"id": "nkobe",
+					"cost": 30
+				}
+			],
+			"tracks": [
+				{
+					"no": 0,
+					"line": "sky",
+					"cost": 16,
+					"dist": "sanno",
+					"dist_no": 1,
+					"for": "大手町"
+				}
+			]
+		},
+		{
+			"id": "goku",
+			"name": "極",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "goku",
+					"cost": 10,
+					"dist": "tshin",
+					"dist_no": 2,
+					"for": "東武真道"
+				},
+				{
+					"no": 0,
+					"line": "goku",
+					"cost": 10,
+					"dist": "michi",
+					"dist_no": 0,
+					"for": "朝鮮半島"
+				}
+			]
+		},
+		{
+			"id": "michi",
+			"name": "道の",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "goku",
+					"cost": 10,
+					"dist": "goku",
+					"dist_no": 0,
+					"for": "東武真道"
+				},
+				{
+					"no": 0,
+					"line": "goku",
+					"cost": 10,
+					"dist": "chosen",
+					"dist_no": 4,
+					"for": "朝鮮半島"
+				}
+			]
+		},
+		{
+			"id": "chufu",
+			"name": "中腹",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "tozan",
+					"cost": 18,
+					"dist": "sancho",
+					"dist_no": 0,
+					"for": "山頂"
+				},
+				{
+					"no": 1,
+					"line": "tozan",
+					"cost": 27,
+					"dist": "jai",
+					"dist_no": 3,
+					"for": "JAIST"
+				}
+			]
+		},
+		{
+			"id": "sancho",
+			"name": "山頂",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "tozan",
+					"cost": 15,
+					"dist": "chufu",
+					"dist_no": 1,
+					"for": "JAIST"
+				}
+			]
+		},
+		{
+			"id": "niho",
+			"name": "二宝港",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "furyo",
+					"cost": 10,
+					"dist": "furyo",
+					"dist_no": 3,
+					"for": "コトユエ"
+				}
+			]
+		},
+		{
+			"id": "koto",
+			"name": "コトユエ",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "furyo",
+					"cost": 10,
+					"dist": "furyo",
+					"dist_no": 2,
+					"for": "二宝港"
+				}
+			]
+		},
+		{
+			"id": "note",
+			"name": "大手町（ネザー）",
+			"parent": "ote",
+			"walk_transfers": [
+				{
+					"id": "ote",
+					"cost": 30
+				}
+			],
+			"tracks": [
+				{
+					"no": 0,
+					"line": "nether",
+					"cost": 10,
+					"dist": "yosai",
+					"dist_no": 0,
+					"for": "ネザー要塞"
+				},
+				{
+					"no": 1,
+					"line": "nether",
+					"cost": 10,
+					"dist": "nishi",
+					"dist_no": 0,
+					"for": "石橋"
+				},
+				{
+					"no": 1,
+					"line": "nether",
+					"cost": 10,
+					"dist": "nshin",
+					"dist_no": 1,
+					"for": "神戸"
+				},
+				{
+					"no": 2,
+					"line": "nlocal",
+					"cost": 10,
+					"dist": "yuga",
+					"dist_no": 0,
+					"for": "ネザー要塞"
+				},
+				{
+					"no": 3,
+					"line": "nsap",
+					"cost": 10,
+					"dist": "pig",
+					"dist_no": 0,
+					"for": "ワノ国"
+				}
+			]
+		},
+		{
+			"id": "nishi",
+			"name": "石橋（ネザー）",
+			"parent": "ishi",
+			"walk_transfers": [
+				{
+					"id": "ishi",
+					"cost": 30
+				},
+				{
+					"id": "tishi",
+					"cost": 30
+				}
+			],
+			"tracks": [
+				{
+					"no": 0,
+					"line": "nether",
+					"cost": 10,
+					"dist": "note",
+					"dist_no": 0,
+					"for": "ネザー要塞"
+				},
+				{
+					"no": 1,
+					"line": "nether",
+					"cost": 10,
+					"dist": "nshin",
+					"dist_no": 1,
+					"for": "神戸"
+				},
+				{
+					"no": 2,
+					"line": "nkai",
+					"cost": 10,
+					"dist": "nkai",
+					"dist_no": 0,
+					"for": "海底神殿"
+				},
+				{
+					"no": 3,
+					"line": "nlaugh",
+					"cost": 10,
+					"dist": "nlaugh",
+					"dist_no": 0,
+					"for": "ラフテル"
+				}
+			]
+		},
+		{
+			"id": "nshin",
+			"name": "真道（ネザー）",
+			"parent": "shin",
+			"walk_transfers": [
+				{
+					"id": "shin",
+					"cost": 30
+				},
+				{
+					"id": "tshin",
+					"cost": 30
+				}
+			],
+			"tracks": [
+				{
+					"no": 0,
+					"line": "nether",
+					"cost": 10,
+					"dist": "note",
+					"dist_no": 0,
+					"for": "ネザー要塞"
+				},
+				{
+					"no": 0,
+					"line": "nether",
+					"cost": 10,
+					"dist": "nishi",
+					"dist_no": 1,
+					"for": "石橋"
+				},
+				{
+					"no": 1,
+					"line": "nether",
+					"cost": 10,
+					"dist": "nlaugh2",
+					"dist_no": 1,
+					"for": "神戸"
+				},
+				{
+					"no": 2,
+					"line": "nkai",
+					"cost": 10,
+					"dist": "nkai",
+					"dist_no": 1,
+					"for": "海底神殿"
+				}
+			]
+		},
+		{
+			"id": "nlaugh2",
+			"name": "第2ラフテル（ネザー）",
+			"parent": "laugh2",
+			"walk_transfers": [
+				{
+					"id": "laugh2",
+					"cost": 30
+				}
+			],
+			"tracks": [
+				{
+					"no": 0,
+					"line": "nether",
+					"cost": 10,
+					"dist": "nshin",
+					"dist_no": 0,
+					"for": "ネザー要塞・石橋"
+				},
+				{
+					"no": 1,
+					"line": "nether",
+					"cost": 10,
+					"dist": "nkobe",
+					"dist_no": 0,
+					"for": "神戸"
+				}
+			]
+		},
+		{
+			"id": "nkobe",
+			"name": "神戸（ネザー）",
+			"parent": "kobe",
+			"walk_transfers": [
+				{
+					"id": "kobe",
+					"cost": 30
+				}
+			],
+			"tracks": [
+				{
+					"no": 0,
+					"line": "nether",
+					"cost": 10,
+					"dist": "nlaugh2",
+					"dist_no": 0,
+					"for": "ネザー要塞・石橋"
+				}
+			]
+		},
+		{
+			"id": "yosai",
+			"name": "ネザー要塞",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "nether",
+					"cost": 10,
+					"dist": "note",
+					"dist_no": 1,
+					"for": "神戸・石橋"
+				},
+				{
+					"no": 1,
+					"line": "nlocal",
+					"cost": 10,
+					"dist": "touno",
+					"dist_no": 1,
+					"for": "大手町"
+				}
+			]
+		},
+		{
+			"id": "yuga",
+			"name": "歪んだ森",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "nlocal",
+					"cost": 10,
+					"dist": "touno",
+					"dist_no": 0,
+					"for": "ネザー要塞"
+				},
+				{
+					"no": 1,
+					"line": "nlocal",
+					"cost": 10,
+					"dist": "note",
+					"dist_no": 2,
+					"for": "大手町"
+				}
+			]
+		},
+		{
+			"id": "touno",
+			"name": "塔のへつり",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "nlocal",
+					"cost": 10,
+					"dist": "yosai",
+					"dist_no": 1,
+					"for": "ネザー要塞"
+				},
+				{
+					"no": 1,
+					"line": "nlocal",
+					"cost": 10,
+					"dist": "yuga",
+					"dist_no": 1,
+					"for": "大手町"
+				},
+				{
+					"no": 2,
+					"line": "nhita",
+					"cost": 10,
+					"dist": "hita",
+					"dist_no": 0,
+					"for": "ひたち海浜公園"
+				}
+			]
+		},
+		{
+			"id": "hita",
+			"name": "ひたち海浜公園",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "nhita",
+					"cost": 10,
+					"dist": "touno",
+					"dist_no": 2,
+					"for": "塔のへつり"
+				}
+			]
+		},
+		{
+			"id": "pig",
+			"name": "ピグリン交易所",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "nsap",
+					"cost": 10,
+					"dist": "nsap",
+					"dist_no": 0,
+					"for": "ワノ国"
+				},
+				{
+					"no": 1,
+					"line": "nsap",
+					"cost": 10,
+					"dist": "note",
+					"dist_no": 3,
+					"for": "大手町"
+				}
+			]
+		},
+		{
+			"id": "nsap",
+			"name": "札幌（ネザー）",
+			"parent": "sap",
+			"walk_transfers": [
+				{
+					"id": "sap",
+					"cost": 30
+				}
+			],
+			"tracks": [
+				{
+					"no": 0,
+					"line": "nsap",
+					"cost": 10,
+					"dist": "laugh3",
+					"dist_no": 0,
+					"for": "ワノ国"
+				},
+				{
+					"no": 1,
+					"line": "nsap",
+					"cost": 10,
+					"dist": "pig",
+					"dist_no": 1,
+					"for": "大手町"
+				}
+			]
+		},
+		{
+			"id": "laugh3",
+			"name": "第3ラフテル",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "nsap",
+					"cost": 10,
+					"dist": "wano",
+					"dist_no": 0,
+					"for": "ワノ国"
+				},
+				{
+					"no": 1,
+					"line": "nsap",
+					"cost": 10,
+					"dist": "nsap",
+					"dist_no": 1,
+					"for": "大手町"
+				}
+			]
+		},
+		{
+			"id": "wano",
+			"name": "ワノ国",
+			"tracks": [
+				{
+					"no": 0,
+					"line": "nsap",
+					"cost": 10,
+					"dist": "laugh3",
+					"dist_no": 1,
+					"for": "大手町"
+				}
+			]
+		},
+		{
+			"id": "nlaugh",
+			"name": "ラフテル（ネザー）",
+			"parent": "laugh",
+			"walk_transfers": [
+				{
+					"id": "laugh",
+					"cost": 30
+				}
+			],
+			"tracks": [
+				{
+					"no": 0,
+					"line": "nlaugh",
+					"cost": 10,
+					"dist": "nishi",
+					"dist_no": 3,
+					"for": "石橋"
+				}
+			]
+		},
+		{
+			"id": "nkai",
+			"name": "海底神殿（ネザー）",
+			"parent": "kai",
+			"walk_transfers": [
+				{
+					"id": "kai",
+					"cost": 30
+				}
+			],
+			"tracks": [
+				{
+					"no": 0,
+					"line": "nkai",
+					"cost": 10,
+					"dist": "nishi",
+					"dist_no": 2,
+					"for": "石橋"
+				},
+				{
+					"no": 1,
+					"line": "nkai",
+					"cost": 10,
+					"dist": "nshin",
+					"dist_no": 2,
+					"for": "真道"
+				}
+			]
+		}
+	]
+}
