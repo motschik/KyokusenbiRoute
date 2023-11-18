@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Minecraft乗換案内</title>
+</head>
+<body>
+	<br>
+	<table>
+	<tr th:each="list:${route}">
+	<td th:text="${list}"></td>
+	</tr>
+	</table>
+	<br>
+	<form name="form" action="/search" method="post">
+	<select name="from" >
+		<option
+			th:each="stations:${stationList}"
+			th:value="${stations.id}"
+			th:text="${stations.name}"
+			th:selected="${stations.id == selectedFrom}"
+			>
+			</option>
+	</select>
+	→
+	<select name="to">
+		<option
+			th:each="stations:${stationList}"
+			th:value="${stations.id}"
+			th:text="${stations.name}"
+			th:selected="${stations.id == selectedTo}"
+			>
+			</option>
+	</select>
+	<input type="submit" value="検索">
+	</form>
+</body>
+</html>
