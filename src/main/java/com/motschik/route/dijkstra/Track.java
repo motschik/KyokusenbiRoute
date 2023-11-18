@@ -13,6 +13,7 @@ public class Track {
   private List<Node> minRoute = new ArrayList<>();
 
   private Station station;
+  private Integer no;
   // private Line line;
 
   public void addNode(Node node) {

@@ -7,8 +7,10 @@ import com.motschik.route.dijkstra.Line;
 import com.motschik.route.dijkstra.Node;
 import com.motschik.route.dijkstra.NodeType;
 import com.motschik.route.dijkstra.Station;
+import com.motschik.route.dijkstra.Track;
 import com.motschik.route.json.JsonReader;
 import com.motschik.route.json.RouteMapObject;
+import com.motschik.route.route.RouteFromDijkstra;
 
 public class Main {
   public static void main(String args[]) {
@@ -26,8 +28,26 @@ public class Main {
     var stationMap = dijkstraBean.getStationMap();
     var trackList = dijkstraBean.getTrackList();
 
-    var result = dik.dijkstra(stationMap.get("laugh2"), stationMap.get("sap"), trackList);
+    var result = dik.dijkstra(stationMap.get("ote"), stationMap.get("sap"), trackList);
 
+    var dijkstraInputBean = new DijkstraBean();
+    dijkstraInputBean.setDistTrack(result);
+    dijkstraInputBean.setLineMap(dijkstraBean.getLineMap());
+    dijkstraInputBean.setStationMap(dijkstraBean.getStationMap());
+    dijkstraInputBean.setTrackList(dijkstraBean.getTrackList());
+
+    var routeBeanList = RouteFromDijkstra.routeFromDijkstra(dijkstraInputBean);
+
+    for (var routeBean : routeBeanList) {
+      System.out.println(routeBean);
+
+    }
+
+
+    // outputTestText(result);
+  }
+
+  private static void outputTestText(Track result) {
     Node before = null;
     for (var route : result.getMinRoute()) {
 

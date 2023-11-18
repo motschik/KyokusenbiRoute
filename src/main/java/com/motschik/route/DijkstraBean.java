@@ -14,4 +14,5 @@ public class DijkstraBean {
   private List<Track> trackList = new ArrayList<>();
   private Map<String, Line> lineMap = new HashMap<>();
   private Map<String, Station> StationMap = new HashMap<>();
+  private Track distTrack;
 }

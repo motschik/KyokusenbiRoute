@@ -38,6 +38,7 @@ public class JsonDijkstraMapper {
       for (var trackObject : stationObject.getTracks()) {
         Track track = new Track();
         track.setStation(station);
+        track.setNo(trackObject.getNo());
         station.addTrack(track, trackObject.getNo());
         trackList.add(track);
       }
