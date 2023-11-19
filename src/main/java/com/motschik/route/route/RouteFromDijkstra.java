@@ -21,6 +21,8 @@ public class RouteFromDijkstra {
     var nodeIterator = minRoute.iterator();
     Node node = null;
     RouteBeanLine lineBean = null;
+    Integer totalCost = 0;
+
     while (nodeIterator.hasNext()) {
       beforeNode = node;
       node = nodeIterator.next();
@@ -47,6 +49,7 @@ public class RouteFromDijkstra {
             lineBean.setForStation(node.getForStation());
             lineBean.setStationCount(1);
             routeList.add(lineBean);
+            totalCost += node.getCost();
           } else {
             if (lineBean.getLine() != node.getLine()) {
               Station station = node.getFrom().getStation();
@@ -65,9 +68,11 @@ public class RouteFromDijkstra {
               lineBean.setForStation(node.getForStation());
               lineBean.setStationCount(1);
               routeList.add(lineBean);
+              totalCost += node.getCost();
             } else {
               lineBean.addCost(node.getCost() + 1);
               lineBean.incrementStationCount();
+              totalCost += node.getCost() + 1;
             }
           }
           break;
@@ -83,10 +88,12 @@ public class RouteFromDijkstra {
             stationBean.setViaFlag(false);
             stationBean.setArriveNo(beforeNode.getDist().getNo());
             stationBean.setCost(node.getCost());
+            totalCost += node.getCost();
             beforeNode = node;
             node = nodeIterator.next();
             stationBean.setDepartureNo(node.getDist().getNo());
             routeList.add(stationBean);
+
           }
           break;
         case WALK:
@@ -116,6 +123,8 @@ public class RouteFromDijkstra {
             walkBean.setCost(node.getCost());
             walkBean.setRouteType(RouteType.WALK);
             routeList.add(walkBean);
+
+            totalCost += node.getCost();
 
             Station station2 = (Station) node.getDist();
             var stationBean2 = new RouteBeanStation();
