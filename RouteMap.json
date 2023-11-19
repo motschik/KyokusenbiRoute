@@ -3,7 +3,7 @@
 		{
 			"id": "utsu",
 			"name": "宇都宮線",
-			"color": "#FF0000"
+			"color": "#FF8000"
 		},
 		{
 			"id": "tera",
@@ -13,17 +13,17 @@
 		{
 			"id": "yuna",
 			"name": "湯長谷線",
-			"color": "#4040FF"
+			"color": "#4bacc6"
 		},
 		{
 			"id": "yunashin",
 			"name": "湯長谷新線",
-			"color": "#8080FF"
+			"color": "#93cddd"
 		},
 		{
 			"id": "yama",
 			"name": "東大和線",
-			"color": "#FF00FF"
+			"color": "#a42eff"
 		},
 		{
 			"id": "suzu",
@@ -63,7 +63,7 @@
 		{
 			"id": "mido",
 			"name": "みどり野線",
-			"color": "#008000"
+			"color": "#00b050"
 		},
 		{
 			"id": "maru",
@@ -78,12 +78,12 @@
 		{
 			"id": "ishi",
 			"name": "特急いしばし",
-			"color": "#FFFFFF"
+			"color": "#BBBBBB"
 		},
 		{
 			"id": "sky",
 			"name": "スカイライン",
-			"color": "#A0A0FF"
+			"color": "#38e8d3"
 		},
 		{
 			"id": "goku",
@@ -93,12 +93,12 @@
 		{
 			"id": "tozan",
 			"name": "JAIST登山鉄道",
-			"color": "#FF8080"
+			"color": "#e9b9b9"
 		},
 		{
 			"id": "shuttle",
 			"name": "ニューシャトル",
-			"color": "#402000"
+			"color": "#c45e0b"
 		},
 		{
 			"id": "furyo",
@@ -123,7 +123,7 @@
 		{
 			"id": "nsap",
 			"name": "ネザー札幌線",
-			"color": "#0000FF"
+			"color": "#33ffdd"
 		},
 		{
 			"id": "nlaugh",
@@ -1881,7 +1881,7 @@
 				{
 					"no": 0,
 					"line": "nether",
-					"cost": 10,
+					"cost": 39,
 					"dist": "yosai",
 					"dist_no": 0,
 					"for": "ネザー要塞"
@@ -1889,7 +1889,7 @@
 				{
 					"no": 1,
 					"line": "nether",
-					"cost": 10,
+					"cost": 20,
 					"dist": "nishi",
 					"dist_no": 0,
 					"for": "石橋"
@@ -1897,7 +1897,7 @@
 				{
 					"no": 1,
 					"line": "nether",
-					"cost": 10,
+					"cost": 15,
 					"dist": "nshin",
 					"dist_no": 1,
 					"for": "神戸"
@@ -1905,7 +1905,7 @@
 				{
 					"no": 2,
 					"line": "nlocal",
-					"cost": 10,
+					"cost": 45,
 					"dist": "yuga",
 					"dist_no": 0,
 					"for": "ネザー要塞"
@@ -1913,7 +1913,7 @@
 				{
 					"no": 3,
 					"line": "nsap",
-					"cost": 10,
+					"cost": 13,
 					"dist": "pig",
 					"dist_no": 0,
 					"for": "ワノ国"
@@ -1938,7 +1938,7 @@
 				{
 					"no": 0,
 					"line": "nether",
-					"cost": 10,
+					"cost": 18,
 					"dist": "note",
 					"dist_no": 0,
 					"for": "ネザー要塞"
@@ -1946,7 +1946,7 @@
 				{
 					"no": 1,
 					"line": "nether",
-					"cost": 10,
+					"cost": 23,
 					"dist": "nshin",
 					"dist_no": 1,
 					"for": "神戸"
@@ -1954,7 +1954,7 @@
 				{
 					"no": 2,
 					"line": "nkai",
-					"cost": 10,
+					"cost": 23,
 					"dist": "nkai",
 					"dist_no": 0,
 					"for": "海底神殿"
@@ -1962,7 +1962,7 @@
 				{
 					"no": 3,
 					"line": "nlaugh",
-					"cost": 10,
+					"cost": 35,
 					"dist": "nlaugh",
 					"dist_no": 0,
 					"for": "ラフテル"
@@ -1987,7 +1987,7 @@
 				{
 					"no": 0,
 					"line": "nether",
-					"cost": 10,
+					"cost": 15,
 					"dist": "note",
 					"dist_no": 0,
 					"for": "ネザー要塞"
@@ -1995,7 +1995,7 @@
 				{
 					"no": 0,
 					"line": "nether",
-					"cost": 10,
+					"cost": 25,
 					"dist": "nishi",
 					"dist_no": 1,
 					"for": "石橋"
@@ -2003,7 +2003,7 @@
 				{
 					"no": 1,
 					"line": "nether",
-					"cost": 10,
+					"cost": 20,
 					"dist": "nlaugh2",
 					"dist_no": 1,
 					"for": "神戸"
@@ -2032,7 +2032,7 @@
 				{
 					"no": 0,
 					"line": "nether",
-					"cost": 10,
+					"cost": 22,
 					"dist": "nshin",
 					"dist_no": 0,
 					"for": "ネザー要塞・石橋"
@@ -2040,7 +2040,7 @@
 				{
 					"no": 1,
 					"line": "nether",
-					"cost": 10,
+					"cost": 25,
 					"dist": "nkobe",
 					"dist_no": 0,
 					"for": "神戸"
@@ -2061,7 +2061,7 @@
 				{
 					"no": 0,
 					"line": "nether",
-					"cost": 10,
+					"cost": 24,
 					"dist": "nlaugh2",
 					"dist_no": 0,
 					"for": "ネザー要塞・石橋"
@@ -2075,7 +2075,7 @@
 				{
 					"no": 0,
 					"line": "nether",
-					"cost": 10,
+					"cost": 39,
 					"dist": "note",
 					"dist_no": 1,
 					"for": "神戸・石橋"
@@ -2083,7 +2083,7 @@
 				{
 					"no": 1,
 					"line": "nlocal",
-					"cost": 10,
+					"cost": 46,
 					"dist": "touno",
 					"dist_no": 1,
 					"for": "大手町"
@@ -2097,7 +2097,7 @@
 				{
 					"no": 0,
 					"line": "nlocal",
-					"cost": 10,
+					"cost": 37,
 					"dist": "touno",
 					"dist_no": 0,
 					"for": "ネザー要塞"
@@ -2105,7 +2105,7 @@
 				{
 					"no": 1,
 					"line": "nlocal",
-					"cost": 10,
+					"cost": 45,
 					"dist": "note",
 					"dist_no": 2,
 					"for": "大手町"
@@ -2119,7 +2119,7 @@
 				{
 					"no": 0,
 					"line": "nlocal",
-					"cost": 10,
+					"cost": 47,
 					"dist": "yosai",
 					"dist_no": 1,
 					"for": "ネザー要塞"
@@ -2127,7 +2127,7 @@
 				{
 					"no": 1,
 					"line": "nlocal",
-					"cost": 10,
+					"cost": 37,
 					"dist": "yuga",
 					"dist_no": 1,
 					"for": "大手町"
@@ -2135,7 +2135,7 @@
 				{
 					"no": 2,
 					"line": "nhita",
-					"cost": 10,
+					"cost": 13,
 					"dist": "hita",
 					"dist_no": 0,
 					"for": "ひたち海浜公園"
@@ -2149,7 +2149,7 @@
 				{
 					"no": 0,
 					"line": "nhita",
-					"cost": 10,
+					"cost": 13,
 					"dist": "touno",
 					"dist_no": 2,
 					"for": "塔のへつり"
@@ -2163,7 +2163,7 @@
 				{
 					"no": 0,
 					"line": "nsap",
-					"cost": 10,
+					"cost": 15,
 					"dist": "nsap",
 					"dist_no": 0,
 					"for": "ワノ国"
@@ -2171,7 +2171,7 @@
 				{
 					"no": 1,
 					"line": "nsap",
-					"cost": 10,
+					"cost": 13,
 					"dist": "note",
 					"dist_no": 3,
 					"for": "大手町"
@@ -2192,7 +2192,7 @@
 				{
 					"no": 0,
 					"line": "nsap",
-					"cost": 10,
+					"cost": 18,
 					"dist": "laugh3",
 					"dist_no": 0,
 					"for": "ワノ国"
@@ -2200,7 +2200,7 @@
 				{
 					"no": 1,
 					"line": "nsap",
-					"cost": 10,
+					"cost": 14,
 					"dist": "pig",
 					"dist_no": 1,
 					"for": "大手町"
@@ -2214,7 +2214,7 @@
 				{
 					"no": 0,
 					"line": "nsap",
-					"cost": 10,
+					"cost": 22,
 					"dist": "wano",
 					"dist_no": 0,
 					"for": "ワノ国"
@@ -2222,7 +2222,7 @@
 				{
 					"no": 1,
 					"line": "nsap",
-					"cost": 10,
+					"cost": 19,
 					"dist": "nsap",
 					"dist_no": 1,
 					"for": "大手町"
@@ -2236,7 +2236,7 @@
 				{
 					"no": 0,
 					"line": "nsap",
-					"cost": 10,
+					"cost": 20,
 					"dist": "laugh3",
 					"dist_no": 1,
 					"for": "大手町"
@@ -2257,7 +2257,7 @@
 				{
 					"no": 0,
 					"line": "nlaugh",
-					"cost": 10,
+					"cost": 36,
 					"dist": "nishi",
 					"dist_no": 3,
 					"for": "石橋"
@@ -2278,7 +2278,7 @@
 				{
 					"no": 0,
 					"line": "nkai",
-					"cost": 10,
+					"cost": 24,
 					"dist": "nishi",
 					"dist_no": 2,
 					"for": "石橋"
@@ -2286,7 +2286,7 @@
 				{
 					"no": 1,
 					"line": "nkai",
-					"cost": 10,
+					"cost": 12,
 					"dist": "nshin",
 					"dist_no": 2,
 					"for": "真道"
