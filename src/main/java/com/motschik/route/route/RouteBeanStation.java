@@ -8,4 +8,5 @@ public class RouteBeanStation extends RouteBean {
   private boolean viaFlag = false;
   private Integer arriveNo;
   private Integer departureNo;
+  private Integer cost;
 }

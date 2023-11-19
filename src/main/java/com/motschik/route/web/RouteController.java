@@ -92,6 +92,9 @@ public class RouteController {
           if (stationBean.getDepartureNo() != null) {
             sb.append(" " + (stationBean.getDepartureNo() + 1) + "番線発");
           }
+          if (stationBean.getCost() != null) {
+            sb.append(" 乗換" + stationBean.getCost() + "秒");
+          }
           routeList.add(sb.toString());
           break;
         case WALK:

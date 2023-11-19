@@ -63,6 +63,7 @@ public class RouteFromDijkstra {
             stationBean.setRouteType(RouteType.STATION);
             stationBean.setViaFlag(false);
             stationBean.setArriveNo(beforeNode.getDist().getNo());
+            stationBean.setCost(node.getCost());
             beforeNode = node;
             node = nodeIterator.next();
             stationBean.setDepartureNo(node.getDist().getNo());
