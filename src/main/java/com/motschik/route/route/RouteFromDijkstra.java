@@ -48,8 +48,27 @@ public class RouteFromDijkstra {
             lineBean.setStationCount(1);
             routeList.add(lineBean);
           } else {
-            lineBean.addCost(node.getCost() + 1);
-            lineBean.incrementStationCount();
+            if (lineBean.getLine() != node.getLine()) {
+              Station station = node.getFrom().getStation();
+              var stationBean = new RouteBeanStation();
+              stationBean.setName(station.getName());
+              stationBean.setRouteType(RouteType.STATION);
+              stationBean.setViaFlag(true);
+              routeList.add(stationBean);
+
+              lineBean = new RouteBeanLine();
+              lineBean.setLine(node.getLine());
+              lineBean.setName(node.getLine().getName());
+              lineBean.setRouteType(RouteType.LINE);
+              lineBean.setColor(node.getLine().getColor());
+              lineBean.setCost(node.getCost());
+              lineBean.setForStation(node.getForStation());
+              lineBean.setStationCount(1);
+              routeList.add(lineBean);
+            } else {
+              lineBean.addCost(node.getCost() + 1);
+              lineBean.incrementStationCount();
+            }
           }
           break;
         case CHANGE:
