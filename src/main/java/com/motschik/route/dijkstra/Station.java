@@ -16,7 +16,7 @@ public class Station extends Track {
 
   public void addTrack(Track track, int no) {
     if (!containsNo(no)) {
-      addNode(new Node(track, 0, NodeType.START));
+      addNode(new Node(this, track, 0, NodeType.START));
       tracks.put(no, track);
     }
   }

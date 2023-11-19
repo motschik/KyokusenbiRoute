@@ -74,13 +74,23 @@ public class RouteFromDijkstra {
             lineBean = null;
           }
           if (node.getDist() instanceof Station) {
-            Station station1 = beforeNode.getDist().getStation();
-            var stationBean1 = new RouteBeanStation();
-            stationBean1.setName(station1.getName());
-            stationBean1.setRouteType(RouteType.STATION);
-            stationBean1.setViaFlag(false);
-            stationBean1.setArriveNo(beforeNode.getDist().getNo());
-            routeList.add(stationBean1);
+            if (!first) {
+              Station station1 = beforeNode.getDist().getStation();
+              var stationBean1 = new RouteBeanStation();
+              stationBean1.setName(station1.getName());
+              stationBean1.setRouteType(RouteType.STATION);
+              stationBean1.setViaFlag(false);
+              stationBean1.setArriveNo(beforeNode.getDist().getNo());
+              routeList.add(stationBean1);
+            } else {
+              var stationBean = new RouteBeanStation();
+              stationBean.setName(node.getFrom().getStation().getName());
+              stationBean.setRouteType(RouteType.STATION);
+              stationBean.setViaFlag(false);
+              stationBean.setDepartureNo(node.getDist().getNo());
+              routeList.add(stationBean);
+              first = false;
+            }
 
             var walkBean = new RouteBeanWalk();
             walkBean.setCost(node.getCost());
@@ -93,9 +103,9 @@ public class RouteFromDijkstra {
             stationBean2.setRouteType(RouteType.STATION);
             stationBean2.setViaFlag(false);
             beforeNode = node;
-            node = nodeIterator.next();
-            stationBean2.setDepartureNo(node.getDist().getNo());
             if (nodeIterator.hasNext()) {
+              node = nodeIterator.next();
+              stationBean2.setDepartureNo(node.getDist().getNo());
               routeList.add(stationBean2);
             }
           }

@@ -33,6 +33,7 @@ public class JsonDijkstraMapper {
       Station station = new Station();
       station.setId(stationObject.getId());
       station.setName(stationObject.getName());
+      station.setStation(station);
       stationMap.put(stationObject.getId(), station);
       trackList.add(station);
       for (var trackObject : stationObject.getTracks()) {
@@ -55,19 +56,24 @@ public class JsonDijkstraMapper {
           if (distTrack == null) {
             System.out.println("aaa");
           }
-          track.addNode(new Node(distTrack, trackObject.getCost(), nodeLine, NodeType.RAIL,
+          track.addNode(new Node(track, distTrack, trackObject.getCost(), nodeLine, NodeType.RAIL,
               trackObject.getForStation()));
         }
       }
 
       for (var trackEntry : station.getTracks().entrySet()) {
         var track = trackEntry.getValue();
-        track.addNode(new Node(station, 10, NodeType.CHANGE));
+        track.addNode(new Node(track, station, 10, NodeType.CHANGE));
 
         for (var transfer : stationObject.getWalkTransfers()) {
           Station transferStation = stationMap.get(transfer.getId());
-          track.addNode(new Node(transferStation, transfer.getCost(), NodeType.WALK));
+          track.addNode(new Node(track, transferStation, transfer.getCost(), NodeType.WALK));
         }
+      }
+
+      for (var transfer : stationObject.getWalkTransfers()) {
+        Station transferStation = stationMap.get(transfer.getId());
+        station.addNode(new Node(station, transferStation, transfer.getCost(), NodeType.WALK));
       }
     }
 

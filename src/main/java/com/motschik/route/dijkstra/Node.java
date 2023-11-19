@@ -5,6 +5,7 @@ import lombok.Data;
 @Data
 public class Node {
 
+  private Track from;
   private Track dist;
   private Integer cost;
 
@@ -12,7 +13,8 @@ public class Node {
   private NodeType type;
   private String forStation;
 
-  public Node(Track dist, Integer cost, Line line, NodeType type, String forStation) {
+  public Node(Track from, Track dist, Integer cost, Line line, NodeType type, String forStation) {
+    this.from = from;
     this.dist = dist;
     this.cost = cost;
     this.line = line;
@@ -20,7 +22,8 @@ public class Node {
     this.forStation = forStation;
   }
 
-  public Node(Track dist, Integer cost, NodeType type) {
+  public Node(Track from, Track dist, Integer cost, NodeType type) {
+    this.from = from;
     this.dist = dist;
     this.cost = cost;
     this.type = type;
