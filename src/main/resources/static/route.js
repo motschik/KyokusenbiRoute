@@ -8,7 +8,7 @@ function submit() {
 
 	const request = new XMLHttpRequest();
 	const fd = new FormData();
-	request.open('POST', '/search');
+	request.open('POST', './search');
 	request.onload = drawResult;
 
 	fd.append('from', document.getElementById('from').value);
