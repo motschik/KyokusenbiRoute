@@ -1,0 +1,116 @@
+body{
+	background-color: #000000;
+}
+
+.station {
+	position: relative;
+	border-radius: 20px;
+	background-color: #DDDDDD;
+	width: 700px;
+	height: 60px;
+}
+
+.via {
+	color: #808080;
+	font-size: 32px;
+	position: relative;
+	top: 8px;
+}
+
+.station_name {
+	font-size: 32px;
+	position: relative;
+	top: 8px;
+	left: 32px;
+}
+
+.arrive {
+	font-size: 16px;
+	position: absolute;
+	top: 0px;
+	left: 620px;
+}
+
+.departure {
+	font-size: 16px;
+	position: absolute;
+	top: 36px;
+	left: 620px;
+}
+
+.change {
+	font-size: 16px;
+	position: absolute;
+	top: 20px;
+	left: 500px;
+}
+
+.line {
+	position: relative;
+	height: 80px;
+	color: #FFFFFF
+}
+
+.line_box {
+	background-color: #FF0000;
+	position: absolute;
+	left: 80px;
+	height: 100%;
+	width: 20px;
+}
+
+.line_cost {
+	font-size: 16px;
+	position: absolute;
+	left: 20px;
+	top: 35px;
+}
+
+.station_count {
+	font-size: 16px;
+	position: absolute;
+	left: 20px;
+	top: 12px;
+}
+
+.line_name {
+	font-size: 28px;
+	position: absolute;
+	left: 120px;
+	top: 10px;
+}
+
+.for_station {
+	font-size: 16px;
+	position: absolute;
+	top: 48px;
+	left: 120px;
+}
+
+.walk {
+	position: relative;
+	height: 60px;
+	color: #FFFFFF
+}
+
+.walk_box {
+	background-color: #808080;
+	position: absolute;
+	left: 85px;
+	height: 100%;
+	width: 10px;
+}
+
+.walk_cost {
+	font-size: 16px;
+	position: absolute;
+	left: 20px;
+	top: 18px;
+}
+
+.walk_name {
+	font-size: 28px;
+	position: absolute;
+	left: 120px;
+	top: 10px;
+}

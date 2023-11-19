@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8" />
 <title>Minecraft乗換案内</title>
+<script src="route.js"></script>
+<link href="route.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<form name="form" action="/search" method="post">
-	<select name="from">
+	<select id="from" name="from">
 		<option
 			th:each="stations:${stationList}"
 			th:value="${stations.id}"
@@ -15,7 +16,7 @@
 			</option>
 	</select>
 	→
-	<select name="to">
+	<select id="to" name="to">
 		<option
 			th:each="stations:${stationList}"
 			th:value="${stations.id}"
@@ -23,7 +24,8 @@
 			>
 			</option>
 	</select>
-	<input type="submit" value="検索">
-	</form>
+	<button id="submit">検索</button>
+
+	<div id="route"></div>
 </body>
 </html>
