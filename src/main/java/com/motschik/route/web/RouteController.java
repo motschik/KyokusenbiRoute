@@ -7,11 +7,13 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import com.motschik.route.DijkstraBean;
 import com.motschik.route.JsonDijkstraMapper;
 import com.motschik.route.dijkstra.Dijkstra;
 import com.motschik.route.dijkstra.DijkstraImpl;
 import com.motschik.route.json.JsonReader;
+import com.motschik.route.route.RouteBean;
 import com.motschik.route.route.RouteBeanLine;
 import com.motschik.route.route.RouteBeanStation;
 import com.motschik.route.route.RouteBeanWalk;
@@ -34,39 +36,46 @@ public class RouteController {
   }
 
   @PostMapping("search")
-  public String search(Model model, @RequestParam("from") String from,
+  @ResponseBody
+  public List<RouteBean> search(Model model, @RequestParam("from") String from,
       @RequestParam("to") String to) {
     var rmo = JsonReader.readLines();
+    var dijkstraBean = JsonDijkstraMapper.dijkstraFromJson(rmo);
     var stationList = rmo.getStationList();
 
     model.addAttribute("stationList", stationList);
-    log.info(from + "→" + to);
-
-    model.addAttribute("route", calcRoute(from, to));
     model.addAttribute("selectedFrom", from);
     model.addAttribute("selectedTo", to);
+    log.info(from + "→" + to);
 
-    return "search";
+    var result = calcRoute(from, to, dijkstraBean);
+    var stringList = createStringList(result);
+    model.addAttribute("route", stringList);
+
+    return result;
+
+
+    // return "search";
   }
 
-  private List<String> calcRoute(String from, String to) {
-    var rmo = JsonReader.readLines();
-
-    var dijkstraBean = JsonDijkstraMapper.dijkstraFromJson(rmo);
-
+  private List<RouteBean> calcRoute(String from, String to, DijkstraBean dijkstraBean) {
     Dijkstra dik = new DijkstraImpl();
     var stationMap = dijkstraBean.getStationMap();
     var trackList = dijkstraBean.getTrackList();
 
     var result = dik.dijkstra(stationMap.get(from), stationMap.get(to), trackList);
-
     var dijkstraInputBean = new DijkstraBean();
     dijkstraInputBean.setDistTrack(result);
     dijkstraInputBean.setLineMap(dijkstraBean.getLineMap());
     dijkstraInputBean.setStationMap(dijkstraBean.getStationMap());
     dijkstraInputBean.setTrackList(dijkstraBean.getTrackList());
 
-    var routeBeanList = RouteFromDijkstra.routeFromDijkstra(dijkstraInputBean);
+    return RouteFromDijkstra.routeFromDijkstra(dijkstraInputBean);
+
+
+  }
+
+  private List<String> createStringList(List<RouteBean> routeBeanList) {
 
     // StringBuilder sb = new StringBuilder();
     List<String> routeList = new ArrayList<>();
@@ -105,8 +114,6 @@ public class RouteController {
     }
 
     return routeList;
-
-
   }
 
 }
