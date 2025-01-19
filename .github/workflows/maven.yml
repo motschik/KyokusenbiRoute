@@ -14,7 +14,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    environment:
+      name: prod
     steps:
     - uses: actions/checkout@v4
     - name: Javaセットアップ JDK 11
@@ -34,6 +35,8 @@ jobs:
 
   stop-application:
     runs-on: ubuntu-latest
+    environment:
+      name: prod
     steps:
     - uses: actions/checkout@v4
     - name: アプリケーションの停止
@@ -50,6 +53,8 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: prod
     needs: [build, stop-application]
     steps:
     - uses: actions/checkout@v4
@@ -69,6 +74,8 @@ jobs:
 
   start-application:
     runs-on: ubuntu-latest
+    environment:
+      name: prod
     needs: deploy
     steps:
     - uses: actions/checkout@v4
