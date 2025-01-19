@@ -10,6 +10,8 @@ name: マスターブランチへのプッシュ時にビルド・デプロイ
 
 on:
   push:
+    branches:
+      - 'main'
 
 jobs:
   build:
