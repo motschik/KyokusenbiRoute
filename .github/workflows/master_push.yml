@@ -23,10 +23,10 @@ jobs:
       name: prod
     steps:
     - uses: actions/checkout@v4
-    - name: Javaセットアップ JDK 11
+    - name: Javaセットアップ JDK 21
       uses: actions/setup-java@v4
       with:
-        java-version: '11'
+        java-version: '21'
         distribution: 'temurin'
         cache: maven
     - name: バージョンアップ
@@ -49,10 +49,10 @@ jobs:
     needs: build
     steps:
     - uses: actions/checkout@v4
-    - name: Javaセットアップ JDK 11
+    - name: Javaセットアップ JDK 21
       uses: actions/setup-java@v4
       with:
-        java-version: '11'
+        java-version: '21'
         distribution: 'temurin'
         cache: maven
     - name: SNAPSHOTを外す
