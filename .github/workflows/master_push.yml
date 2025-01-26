@@ -44,6 +44,8 @@ jobs:
 
   version-up:
     runs-on: ubuntu-latest
+    environment:
+      name: prod
     needs: build
     steps:
     - uses: actions/checkout@v4
@@ -62,10 +64,12 @@ jobs:
         git commit -m "Remove snapshot."
         git push
     - name: タグ付け
+      id: create_tag
       run: |
         VERSION=`mvn help:evaluate -Dexpression=project.version -q -DforceStdout`
         git tag ${VERSION}
         git push origin ${VERSION}
+        echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
     - name: ビルド成果物のダウンロード
       uses: actions/download-artifact@v3
       with:
@@ -78,7 +82,7 @@ jobs:
         git push
     - run : ls -l
     - name: Create Release
-      run: gh release create ${VERSION} --generate-notes KyokusenbiRoute-*.jar
+      run: gh release create ${{steps.create_tag.outputs.version}} KyokusenbiRoute-*.jar --generate-notes
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
@@ -124,6 +128,8 @@ jobs:
 
   start-application:
     runs-on: ubuntu-latest
+    environment:
+      name: prod
     needs: deploy
     steps:
     - uses: actions/checkout@v4
