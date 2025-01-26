@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>com.motschik.route</groupId>
 	<artifactId>KyokusenbiRoute</artifactId>
-	<version>0.1.0-SNAPSHOT</version>
+	<version>0.1.0</version>
 	<name>KyokusenbiRoute</name>
 	<description>KyokusenbiRoute</description>
 	<properties>
